@@ -1,0 +1,700 @@
+/*this is for the page titled main (the one with the pictures)*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*this is for the font of all the writing if you want to change them all to have different ones then ask and i will help*/
+    font-family: 'Georgia';
+}
+nav{
+    height: 120px;
+    /* this is for the background color at the top*/
+    background: #164863;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0rem calc((100vw-1300px)/2);
+}
+.logo{
+    /* this is for the SS underwater camera system at the top*/
+    color: #9BBEC8;
+    font-size: 35px;
+    padding: 0 2rem;
+    margin-left: 3.25%;
+    font-size: bold;
+}
+.nav-items ul{
+    float: right;
+    list-style-type: none;
+    margin-right: 90px;
+    font-size: 25px;
+}
+.nav-items ul li{
+    display: inline-block;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    /* this is for the words at the top*/
+    color: #9BBEC8;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+.nav-items ul li a:hover{
+    /* this is for the background of words at the top when you hover over it*/
+    background-color: #9BBEC8;
+    /* this is for the words at the top when you hover over it*/
+    color: #164863;
+}
+.nav-items ul li.active a{
+    /* this is for the background of words at the top thats active*/
+    background-color: #9BBEC8;
+    /* this is for the words at the top thats active*/
+    color: #164863;
+}
+.dropdown{
+    display: none;
+    top: 10.5%;
+    position: relative;
+}
+.nav-items ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -1.65%
+}
+.nav-items ul li:hover .dropdown a{
+    display: block;
+    margin: 3px;
+    background-color: #9BBEC8;
+    text-align: center;
+    font-size: 20px;
+}
+.lines:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 56.5%;
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    /*this is for the line before the word picture*/
+    background: #164863;
+}
+.lines{
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    /*this is for the word picture*/
+    color: #9BBEC8;
+}
+.lines:after{
+    content:" ";
+    height: 2px;
+    width: 56.5%;
+    /*this is for the line after the word picture*/
+    background: #164863;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -30%;
+}
+.pics{
+    font-size: 20px;
+    text-align: center;
+}
+.bigger-container{
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+}
+.slideshow-container {
+  display: flex;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+}
+.slideshow-container img{
+    width: 100%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.carousel-slide{
+    display: flex;
+}
+.dot {
+  cursor: pointer;
+  height: 2px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #9BBEC8;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.tito:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 310px;
+    position: absolute;
+    top: 50%;
+    left: -170px;
+    /*this is for the line before the word live*/
+    background: #164863;
+}
+.tito{
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    /*this is for the word live*/
+    color: #9BBEC8;
+}
+.tito:after{
+    content:" ";
+    height: 2px;
+    width: 310px;
+    /*this is for the line after the word live*/
+    background: #164863;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -170px;
+}
+.squiggly{
+    font-size: 20px;
+    text-align: center;
+}
+.live{
+    text-align: center;
+}
+.flower{
+    font-size: 20px;
+    text-align: center;
+}
+.potato:before{
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: -170px;
+    /*this is for the line before the word Highlights*/
+    background: #164863;
+}
+.potato{
+    position: relative;
+    max-width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    /*this is for the word Highlights*/
+    color: #9BBEC8;
+}
+.potato:after{
+    content:" ";
+    height: 2px;
+    width: 280px;
+    /*this is for the line after the word Highlights*/
+    background: #164863;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -170px;
+}
+.Highlights{
+    text-align: center;
+    display: flex;
+}
+.apple{
+    padding-right: 15px;
+    padding-left: 6%;
+}
+.orange{
+    padding-left: 15px;
+}
+footer{
+    height: 90px;
+    /*this is for the background of the footer where it says sound school underwater camera system*/
+    background: #164863;
+    display: flex;
+    justify-content:space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem calc((100vw-1300px)/2);
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 5pxi;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    /*this is for the background of the footer where the little icons are (insta, youtube, facebook)*/
+    background-color: #164863;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 5px;
+    /*this is for the background of the little icons(insta, youtube, facebook)*/
+    background-color: #DDF2FD;
+    margin: 10px;
+    border-radius: 25%;
+}
+.socialIcons a i{
+    font-size: 15px;
+    /*this is for the little icons (insta, youtube, facebook)*/
+    color: #427D9D;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    /*this is for the backrground of the little icons when you hover over them(insta, youtube, facebook)*/
+    background-color: #164863;
+    transition: 0.2s;
+}
+.socialIcons a i:hover{
+    /*this is for the little icons when you hover over them(insta, youtube, facebook)*/
+    color: #DDF2FD;
+    transition: 0.2s;
+}
+.bluefrog{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    /*this is for the background for where main, suggestion, and home are at the bottom*/
+    background-color: #164863;
+    padding-bottom: 5px;
+}
+.bluefrog a{
+    /*this is for the words main, suggestion, and home at the bottom*/
+    color: #9BBEC8;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 22px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.cat a{
+    text-decoration: none;
+    font-size: 25px;
+    /*this is for the word underwater camera system*/
+    color:#9BBEC8;
+}
+.dog a{
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 45px;
+    /*this is for the word sound school at the bottom*/
+    color:#9BBEC8;
+}
+.bluefrog a hover{
+    opacity: 1;
+}
+.footerBottom{
+    /*this is for the background of the bottom where our names are*/
+    background-color: #0f3245;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    /*this is for our names at the bottom*/
+    color: #DDF2FD;
+}
+body{
+    /*this is for the color or the background (everything other than footer and header)*/
+    background-color: #0d2b3b;
+}
+@media(max-width:700px){
+    .bluefrog{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bluefrog a{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .nav{
+        flex-direction: column;
+        
+    }
+    .nav-items a{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .logo{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+@media(max-width:768px){
+    .logo{
+        font-size: 10px;
+        margin-left: 2%;
+    }
+    .nav-items ul{
+        float: right;
+        margin-right: 40px;
+        font-size: 9px;
+    }
+    .dropdown{
+        top: 9%;
+    }
+    .nav-items ul li:hover .dropdown {
+        display: block;
+        margin-top: 2%;
+        margin-left: -1.5%
+    }
+    iframe{
+        height: 350px;
+        width: 550px;
+        resize: both;
+    }
+    .Highlights{
+       flex-direction: column; 
+    }
+    .apple{
+        padding-left: 3.5%;
+    }
+    .orange{
+        padding-left: 3.5%;
+    }
+    .lines:before{
+        height: 3px;
+        width: 45%;
+        left: -20%;
+    }
+    .lines:after{
+        height: 3px;
+        width: 45%;
+        right: -20%;
+    }
+    .pics{
+        font-size: 20px;
+    }
+    .tito:before{
+        height: 3px;
+        width: 260px;
+        left: -100px;
+    }
+    .tito:after{
+        height: 3px;
+        width: 260px;
+        right: -100px;
+    }
+    .squiggly{
+        font-size: 20px;
+    }
+    .flower{
+        font-size: 20px;
+    }
+    .potato:before{
+        height: 3px;
+        width: 200px;
+        left: -100px;
+    }
+    .potato:after{
+        height: 3px;
+        width: 200px;
+        top: 50%;
+        right: -100px;
+    }
+}
+@media(max-width:1024px){
+    .Highlights iframe{
+        height: 250px;
+        width: 450px;
+        resize: both;
+    }
+    .logo{
+        font-size: 30px;
+        margin-left: 1%;
+    }
+    .nav-items ul{
+        float: right;
+        margin-right: 40px;
+        font-size: 25px;
+    }
+    .dropdown{
+        top: 9%;
+    }
+    .nav-items ul li:hover .dropdown {
+        display: block;
+        margin-top: 1.5%;
+        margin-left: -2.1%
+    }
+    .apple{
+        padding-right: 10px;
+        padding-left: 4.5%;
+    }
+}
+@media(max-width:1280px){
+    .dropdown{
+        top: 8.5%;
+    }
+}
+@media(min-width:1536px){
+    nav{
+        height: 150px;
+    }
+    .logo{
+        font-size: 45px;
+        margin-left: 4%;
+    }
+    .nav-items ul{
+        float: right;
+        margin-right: 90px;
+        font-size: 30px;
+    }
+    .dropdown{
+        top: 8.5%;
+    }
+    .nav-items ul li:hover .dropdown {
+        display: block;
+        margin-top: 1%;
+        margin-left: -1.5%
+    }
+    .nav-items ul li:hover .dropdown a{
+        margin: 3px;
+        font-size: 22.5px;
+    }
+    .apple{
+        padding-right: 10px;
+        padding-left: 3.5%;
+    }
+    .orange{
+        padding-left: 16px;
+    }
+    .Highlights iframe{
+        height: 550px;
+        width: 700px;
+        resize: both;
+    }
+    .lines:before{
+        height: 3px;
+        width: 70%;
+        left: -55%;
+    }
+    .lines:after{
+        height: 3px;
+        width: 70%;
+        right: -55%;
+    }
+    .pics{
+        font-size: 25px;
+    }
+    .tito:before{
+        height: 3px;
+        width: 445px;
+        left: -290px;
+    }
+    .tito:after{
+        height: 3px;
+        width: 445px;
+        right: -290px;
+    }
+    .squiggly{
+        font-size: 25px;
+    }
+    .live iframe{
+        height: 660px;
+        width: 1200px;
+        resize: both;
+    }
+    .flower{
+        font-size: 25px;
+    }
+    .potato:before{
+        height: 3px;
+        width: 400px;
+        left: -310px;
+    }
+    .potato:after{
+        height: 3px;
+        width: 400px;
+        top: 50%;
+        right: -310px;
+    }
+    footer{
+        height: 120px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .socialIcons a i{
+        font-size: 20px;
+    }
+    .bluefrog{
+        padding-bottom: 7px;
+    }
+    .bluefrog a{
+        font-size: 25px;
+    }
+    .cat a{
+        text-decoration: none;
+        font-size: 35px;
+    }
+    .dog a{
+        font-size: 45px;
+        margin-left: 85px;
+    }
+}
+@media(min-width:2532px){
+    nav{
+        height: 180px;
+    }
+    .logo{
+        font-size: 60px;
+        margin-left: 5%;
+    }
+    .nav-items ul{
+        float: right;
+        margin-right: 180px;
+        font-size: 50px;
+    }
+    .dropdown{
+        top: 8.75%;
+    }
+    .nav-items ul li:hover .dropdown {
+        display: block;
+        margin-top: 1%;
+        margin-left: -.6%
+    }
+    .nav-items ul li:hover .dropdown a{
+        margin: 3px;
+        font-size: 30px;
+    }
+    .apple{
+        padding-right: 20px;
+        padding-left: 15%;
+    }
+    .orange{
+        padding-left: 16px;
+    }
+    .Highlights iframe{
+        height: 650px;
+        width: 880px;
+        resize: both;
+    }
+    .lines:before{
+        height: 3px;
+        width: 130%;
+        left: -120%;
+    }
+    .lines:after{
+        height: 3px;
+        width: 130%;
+        right: -120%;
+    }
+    .pics{
+        font-size: 30px;
+    }
+    .tito:before{
+        height: 3px;
+        width: 150%;
+        left: -120%;
+    }
+    .tito:after{
+        height: 3px;
+        width: 150%;
+        right: -120%;
+    }
+    .squiggly{
+        font-size: 30px;
+    }
+    .live iframe{
+        height: 960px;
+        width: 1700px;
+        resize: both;
+    }
+    .flower{
+        font-size: 30px;
+    }
+    .potato:before{
+        height: 3px;
+        width: 650px;
+        left: -600px;
+    }
+    .potato:after{
+        height: 3px;
+        width: 650px;
+        top: 50%;
+        right: -600px;
+    }
+    footer{
+        height: 180px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .socialIcons a i{
+        font-size: 30px;
+    }
+    .bluefrog{
+        padding-bottom: 9px;
+    }
+    .bluefrog a{
+        font-size: 30px;
+    }
+    .cat a{
+        text-decoration: none;
+        font-size: 50px;
+    }
+    .dog a{
+        font-size: 70px;
+        margin-left: 100px;
+    }
+}
